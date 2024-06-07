@@ -1,0 +1,10 @@
+.qna-wrapper {
+	padding: 2em 6em;
+}
+
+@media screen and (max-width: 599px) {
+	.qna-wrapper {
+		padding: 0em 2em;
+		padding-top: 2em;
+	}
+}

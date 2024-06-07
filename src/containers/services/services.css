@@ -1,0 +1,76 @@
+.our-services {
+	display: flex;
+	padding: 0 6em;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding-top: 4em;
+}
+
+.each-service {
+	max-width: 300px;
+	margin: 1em;
+	padding: 36px;
+	border-width: 1px;
+	border-color: rgb(223, 236, 240);
+	border-style: solid;
+	border-radius: 10px;
+	box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px;
+	background-color: rgb(247, 253, 255);
+	transition: background 0.5s ease 0s, border 0.5s ease 0s,
+		border-radius 0.5s ease 0s, box-shadow 0.5s ease 0s;
+}
+
+.each-service:hover {
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(255, 255, 255);
+	border-width: 1px;
+	box-shadow: rgba(2, 33, 63, 0.08) 0px 40px 74px 0px;
+}
+
+.icon-img-wrapper {
+	align-self: center;
+	margin: 0px 0px 40px;
+}
+
+.eb-infobox-image-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contents-wrapper {
+	text-align: center;
+}
+
+.service-description {
+	font-size: 16px;
+	line-height: 1.7em;
+	letter-spacing: 0px;
+	padding: 0px;
+	color: rgb(114, 114, 114);
+}
+
+.service-title {
+	font-size: 25px;
+	line-height: 1.2em;
+	font-weight: 600;
+	font-style: normal;
+	text-decoration: initial;
+	letter-spacing: 0px;
+	padding: 0px 0px 14px;
+	color: rgb(24, 35, 47);
+}
+
+@media screen and (max-width: 599px) {
+	.our-services {
+		padding: 0em 3em;
+		padding-top: 2em;
+	}
+	.each-service {
+		max-width: 100%;
+		padding: 20px;
+		margin: 1em 0;
+	}
+}
