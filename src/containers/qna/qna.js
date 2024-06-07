@@ -14,8 +14,7 @@ const EachQA = ({ question, answer }) => {
 				style={{
 					background: '#f4f9fd',
 					margin: '1em 0',
-					boxShadow: 'none',
-					borderBottom: '1px solid var(--primary-bg)'
+					boxShadow: 'none'
 				}}
 			>
 				<AccordionSummary
