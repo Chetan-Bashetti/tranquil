@@ -18,7 +18,7 @@ export const ContextHelth = React.createContext();
 
 const MainWrapper = () => {
 	const [snackBar, setSnackBar] = React.useState(false);
-	const [frame, setFrame] = React.useState(0);
+	const [frame, setFrame] = React.useState(1);
 
 	const handleCloseSnack = () => setSnackBar(false);
 
@@ -35,8 +35,8 @@ const MainWrapper = () => {
 				<WhyUs />
 				<OurTeam />
 				<Reviews />
-				<AboutUs />
 				<Qna />
+				<AboutUs />
 				<FabIcon />
 				<Footer />
 				<Snackbar

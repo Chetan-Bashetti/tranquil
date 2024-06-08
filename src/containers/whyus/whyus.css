@@ -9,7 +9,7 @@
 }
 
 .each-spacality {
-	max-width: 300px;
+	max-width: 350px;
 	margin: 1em;
 }
 
@@ -30,10 +30,11 @@
 
 .specility-detail {
 	width: -webkit-fill-available;
-	padding: 1em;
+	padding: 2em;
 	padding-top: 40px;
 	border-bottom-right-radius: 41px;
-	border: 2px solid #004bf8;
+	border: 1px solid rgb(223, 236, 240);
+	background: #f7fdff;
 }
 
 .specility-name {

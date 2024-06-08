@@ -7,9 +7,9 @@ import { specility } from '../../mock/specility';
 
 const Spacility = ({ icon, title, desc }) => {
 	const icons = {
-		key1: <PsychologyAltIcon />,
-		key2: <PsychologyIcon />,
-		key3: <HealingIcon />
+		key1: <PsychologyAltIcon style={{ fontSize: '2.5em' }} />,
+		key2: <PsychologyIcon style={{ fontSize: '2.5em' }} />,
+		key3: <HealingIcon style={{ fontSize: '2.5em' }} />
 	};
 
 	return (

@@ -23,7 +23,7 @@ const BannerDescription = ({ name = '', handleOpen, frame }) => {
 					className='product-desc'
 					style={{ color: frame === 1 ? 'white' : '' }}
 				>
-					What Tranquil needs is more sunlight, more candor, and more unashamed
+					What you need is more sunlight, more candor, and more unashamed
 					conversation.
 				</div>
 				<div style={{ marginTop: '3em' }}>
@@ -44,13 +44,14 @@ const Banner = ({ setSnackBar }) => {
 	const handleClose = () => setOpen(false);
 
 	return (
-		<div className='banner-wrapper' id='home'>
+		<div
+			className='banner-wrapper'
+			id='home'
+			style={{ backgroundColor: frame === 1 ? 'var(--primary-bg)' : '' }}
+		>
 			<NavBar />
 			<div className='banner-content'>
-				<div
-					className={'banner-image'}
-					style={{ backgroundColor: frame === 1 ? 'var(--primary-bg)' : '' }}
-				>
+				<div className={'banner-image'}>
 					<BannerDescription
 						name={'banner-product-description-mobile'}
 						handleOpen={handleOpen}
