@@ -65,7 +65,11 @@ const Banner = ({ setSnackBar }) => {
 				/>
 			</div>
 
-			<MuiModal children={<>Hi</>} open={open} handleClose={handleClose} />
+			<MuiModal
+				children={<>Your consultataion has been confirmed for Sunday 2PM </>}
+				open={open}
+				handleClose={handleClose}
+			/>
 		</div>
 	);
 };
