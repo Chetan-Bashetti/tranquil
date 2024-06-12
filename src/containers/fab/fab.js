@@ -3,6 +3,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 import './fab.css';
 import { Fab } from '@mui/material';
+import { phoneNumer } from '../../mock/phone';
 
 const FabIcon = () => {
 	return (
@@ -14,7 +15,7 @@ const FabIcon = () => {
 						style={{ fontSize: '3em', color: 'white' }}
 						onClick={() => {
 							window.open(
-								`https://wa.me/+919060003573?text=Hi, I wanted to check if this UrbanMES?`,
+								`https://wa.me/${phoneNumer}?text=Hi, Thank you for contacting Tranquil`,
 								'_blank'
 							);
 						}}
