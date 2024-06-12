@@ -7,6 +7,7 @@ import MuiButton from '../../components/Button/MuiButton';
 import './about-us.css';
 import MuiModal from '../../components/Modal/MuiModal';
 import { PRIMARY_COLOR } from '../../mock/style';
+import { phoneNumer } from '../../mock/phone';
 
 const AboutUs = () => {
 	const [open, setOpen] = React.useState(false);
@@ -54,13 +55,13 @@ const AboutUs = () => {
 								style={{ fontSize: '3em', color: '#01e676' }}
 								onClick={() => {
 									window.open(
-										`https://wa.me/+919060003573?text=Hi, Thank you for contacting Tranquil?`,
+										`https://wa.me/${phoneNumer}?text=Hi, Thank you for contacting Tranquil`,
 										'_blank'
 									);
 								}}
 							/>
 							<div style={{ width: 20 }} />
-							<a href='tel:+919060003573'>
+							<a href={`tel:+${phoneNumer}`}>
 								<CallIcon
 									style={{
 										fontSize: '3em',
