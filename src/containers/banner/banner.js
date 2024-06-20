@@ -28,7 +28,7 @@ const BannerDescription = ({ name = '', handleOpen, frame }) => {
 					conversation.
 				</div>
 				<div style={{ marginTop: '3em' }}>
-					<MuiButton title='Make appointment' onClick={handleOpen} />
+					<MuiButton title='Make an appointment' onClick={handleOpen} />
 				</div>
 			</div>
 		</>

@@ -39,7 +39,7 @@ const AboutUs = () => {
 							Please fill the form to schedule the visit for services
 						</div>
 						<div style={{ marginTop: '1em' }}>
-							<MuiButton title='Make appointment' onClick={handleOpen} />
+							<MuiButton title='Make an appointment' onClick={handleOpen} />
 						</div>
 					</div>
 					<div className='each-info'>
