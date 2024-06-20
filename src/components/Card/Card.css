@@ -9,10 +9,11 @@
 	max-width: 230px;
 	cursor: pointer;
 	border: 2px solid #bcc1c5;
+	min-width: 200px;
 }
 
 .card-image {
-	height: 150px;
+	height: 125px;
 	margin-bottom: 1em;
 }
 
@@ -42,4 +43,13 @@
 	line-height: 1.4;
 	text-align: center;
 	color: #686d73;
+}
+
+@media screen and (max-width: 599px) {
+	.card-content {
+		flex-direction: column;
+	}
+	/* .card-image {
+		display: none;
+	} */
 }

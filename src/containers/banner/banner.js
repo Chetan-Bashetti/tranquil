@@ -1,10 +1,11 @@
 import React from 'react';
-import NavBar from '../../components/Navbar/NavBar';
-import MuiButton from '../../components/Button/MuiButton';
-import MuiModal from '../../components/Modal/MuiModal';
+import NavBar from 'components/Navbar/NavBar';
+import MuiButton from 'components/Button/MuiButton';
+import MuiModal from 'components/Modal/MuiModal';
 import { ContextHelth } from '..';
 
 import './banner.css';
+import Appointment from 'containers/appointment/appointment';
 
 const BannerDescription = ({ name = '', handleOpen, frame }) => {
 	return (
@@ -66,7 +67,7 @@ const Banner = ({ setSnackBar }) => {
 			</div>
 
 			<MuiModal
-				children={<>Your consultataion has been confirmed for Sunday 2PM </>}
+				children={<Appointment />}
 				open={open}
 				handleClose={handleClose}
 			/>

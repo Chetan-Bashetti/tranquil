@@ -4,21 +4,21 @@ import './services.css';
 const EachService = ({ title, img, desc }) => {
 	return (
 		<div className='each-service'>
-			<div class='eb-infobox-dvwldye eb-infobox-wrapper'>
-				<div class='infobox-wrapper-inner'>
-					<div class='icon-img-wrapper'>
-						<div class='eb-infobox-image-wrapper'>
+			<div className='eb-infobox-dvwldye eb-infobox-wrapper'>
+				<div className='infobox-wrapper-inner'>
+					<div className='icon-img-wrapper'>
+						<div className='eb-infobox-image-wrapper'>
 							<img
 								decoding='async'
-								class='eb-infobox-image'
+								className='eb-infobox-image'
 								src={img}
 								alt={title}
 							/>
 						</div>
 					</div>
-					<div class='contents-wrapper'>
-						<h2 class='service-title'>{title}</h2>
-						<p class='service-description'>{desc}</p>
+					<div className='contents-wrapper'>
+						<h2 className='service-title'>{title}</h2>
+						<p className='service-description'>{desc}</p>
 					</div>
 				</div>
 			</div>

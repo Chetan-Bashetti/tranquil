@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@mui/material';
 import { ContextHelth } from '../../containers';
 
-const MuiButton = ({ title = '', onClick, type, disabled }) => {
+const MuiButton = ({ title = '', onClick, type, disabled, style }) => {
 	const { frame } = React.useContext(ContextHelth);
 
 	return (
@@ -17,7 +17,8 @@ const MuiButton = ({ title = '', onClick, type, disabled }) => {
 				textTransform: 'capitalize',
 				borderRadius: '0.7em',
 				boxShadow: '1px 10px 20px #1f5ae37d',
-				border: frame === 1 ? '1px solid white' : ''
+				border: frame === 1 ? '1px solid white' : '',
+				...style
 			}}
 			onClick={onClick}
 			type={type}

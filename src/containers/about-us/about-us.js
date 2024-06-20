@@ -2,12 +2,12 @@ import React from 'react';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CallIcon from '@mui/icons-material/Call';
 
-import MuiButton from '../../components/Button/MuiButton';
+import MuiButton from 'components/Button/MuiButton';
+import MuiModal from 'components/Modal/MuiModal';
+import { PRIMARY_COLOR } from 'mock/style';
+import { phoneNumer } from 'mock/phone';
 
 import './about-us.css';
-import MuiModal from '../../components/Modal/MuiModal';
-import { PRIMARY_COLOR } from '../../mock/style';
-import { phoneNumer } from '../../mock/phone';
 
 const AboutUs = () => {
 	const [open, setOpen] = React.useState(false);
