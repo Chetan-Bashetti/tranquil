@@ -37,7 +37,12 @@ const Card = ({ isSelcted, data, handleSelect }) => {
 				<RadioButtonUncheckedIcon style={{ color: '#bcc1c5' }} />
 			)}
 			<div className='card-content'>
-				<img src={images[data.key]} alt='module' className='card-image' />
+				<img
+					src={images[data.key]}
+					alt='module'
+					className='card-image'
+					loading='lazy'
+				/>
 				<div className='selection-card-details'>
 					<div className='selection-title'>{data.title}</div>
 					<div className='selection-sub-title'>
