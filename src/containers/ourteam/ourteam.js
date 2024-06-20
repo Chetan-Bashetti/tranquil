@@ -22,7 +22,7 @@ const Team = ({ name, designation, gender, desc }) => {
 
 const OurTeam = () => {
 	return (
-		<div className='about-us-wrapper' id='services'>
+		<div className='about-us-wrapper' id='team'>
 			<div className='about-us-title'>Our Team</div>
 			<div className='team-data'>
 				{team?.map((eachMember) => (

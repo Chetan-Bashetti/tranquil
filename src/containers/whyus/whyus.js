@@ -25,7 +25,7 @@ const Spacility = ({ icon, title, desc }) => {
 
 const WhyUs = () => {
 	return (
-		<div className='about-us-wrapper' id='WhyUs'>
+		<div className='about-us-wrapper' id='why-us'>
 			<div className='about-us-title'>Why Us</div>
 			<div className='why-us-wrapper'>
 				{specility.map((eachSpacility) => (

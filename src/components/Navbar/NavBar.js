@@ -18,6 +18,16 @@ const NavBar = () => {
 		{ title: 'services', id: '#services', icon: <MiscellaneousServicesIcon /> },
 		{ title: 'about us', id: '#about_us', icon: <SupervisorAccountIcon /> },
 		{
+			title: 'team',
+			id: '#team',
+			icon: <RateReviewOutlinedIcon />
+		},
+		{
+			title: 'why us',
+			id: '#why-us',
+			icon: <RateReviewOutlinedIcon />
+		},
+		{
 			title: 'reviews',
 			id: '#reviews',
 			icon: <RateReviewOutlinedIcon />
