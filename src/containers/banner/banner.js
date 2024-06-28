@@ -40,9 +40,7 @@ const Banner = ({ setSnackBar }) => {
 
 	const [open, setOpen] = React.useState(false);
 
-	const handleOpen = () => setOpen(true);
-
-	const handleClose = () => setOpen(false);
+	const handleModel = () => setOpen(!open);
 
 	return (
 		<div
@@ -55,13 +53,13 @@ const Banner = ({ setSnackBar }) => {
 				<div className={'banner-image'}>
 					<BannerDescription
 						name={'banner-product-description-mobile'}
-						handleOpen={handleOpen}
+						handleOpen={handleModel}
 						frame={frame}
 					/>
 				</div>
 				<BannerDescription
 					name={'banner-product-description'}
-					handleOpen={handleOpen}
+					handleOpen={handleModel}
 					frame={frame}
 				/>
 			</div>
@@ -69,7 +67,7 @@ const Banner = ({ setSnackBar }) => {
 			<MuiModal
 				children={<Appointment />}
 				open={open}
-				handleClose={handleClose}
+				handleClose={handleModel}
 			/>
 		</div>
 	);

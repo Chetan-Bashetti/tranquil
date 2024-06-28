@@ -8,13 +8,12 @@ import { PRIMARY_COLOR } from 'mock/style';
 import { phoneNumer } from 'mock/phone';
 
 import './about-us.css';
+import Appointment from 'containers/appointment/appointment';
 
 const AboutUs = () => {
 	const [open, setOpen] = React.useState(false);
 
-	const handleOpen = () => setOpen(true);
-
-	const handleClose = () => setOpen(false);
+	const handleModel = () => setOpen(!open);
 
 	return (
 		<div className='about-us-wrapper' id='about_us'>
@@ -39,7 +38,7 @@ const AboutUs = () => {
 							Please fill the form to schedule the visit for services
 						</div>
 						<div style={{ marginTop: '1em' }}>
-							<MuiButton title='Make an appointment' onClick={handleOpen} />
+							<MuiButton title='Make an appointment' onClick={handleModel} />
 						</div>
 					</div>
 					<div className='each-info'>
@@ -73,7 +72,11 @@ const AboutUs = () => {
 					</div>
 				</div>
 			</div>
-			<MuiModal children={<>HI</>} open={open} handleClose={handleClose} />
+			<MuiModal
+				children={<Appointment />}
+				open={open}
+				handleClose={handleModel}
+			/>
 		</div>
 	);
 };
