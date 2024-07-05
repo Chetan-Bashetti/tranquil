@@ -1,17 +1,17 @@
 export const specility = [
 	{
-		title: 'speciality 1',
+		title: 'Special team',
 		key: 'key1',
-		desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+		desc: 'Special team to support any individual in crisis by holistic approach'
 	},
 	{
-		title: 'speciality 2',
+		title: 'professional',
 		key: 'key2',
-		desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+		desc: 'Team of Licensed mental health professional tailored to meet your needs and help you through evidence based techniques to overcome the issues.'
 	},
 	{
-		title: 'speciality 3',
+		title: 'counselling',
 		key: 'key3',
-		desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+		desc: 'Judicious use of medication & customised counselling for each individual.'
 	}
 ];
