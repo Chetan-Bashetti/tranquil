@@ -1,11 +1,12 @@
 import React from 'react';
+import { ContextHelth } from '..';
+
 import NavBar from 'components/Navbar/NavBar';
 import MuiButton from 'components/Button/MuiButton';
 import MuiModal from 'components/Modal/MuiModal';
-import { ContextHelth } from '..';
+import Appointment from 'containers/appointment/appointment';
 
 import './banner.css';
-import Appointment from 'containers/appointment/appointment';
 
 const BannerDescription = ({ name = '', handleOpen, frame }) => {
 	return (
