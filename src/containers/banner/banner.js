@@ -29,7 +29,13 @@ const BannerDescription = ({ name = '', handleOpen, frame }) => {
 					conversation.
 				</div>
 				<div style={{ marginTop: '3em' }}>
-					<MuiButton title='Make an appointment' onClick={handleOpen} />
+					<MuiButton
+						title='Make an appointment'
+						onClick={handleOpen}
+						style={{
+							border: '1px solid white'
+						}}
+					/>
 				</div>
 			</div>
 		</>
